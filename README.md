@@ -1,2 +1,2 @@
 # ths-robotics-course
-for the robotics course I techat TokyoHackerSpace
+for the robotics course I teach at TokyoHackerSpace
