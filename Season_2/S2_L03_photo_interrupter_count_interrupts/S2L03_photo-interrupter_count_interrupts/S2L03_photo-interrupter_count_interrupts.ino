@@ -29,7 +29,7 @@ void setup() {
 void interrupt_photoswitch(){
     counter++;
     interval++;
-    if (interval == 10){
+    if (interval == 1){
       Serial.println(counter);
       interval = 0;
     }
