@@ -7,7 +7,7 @@
 #include "LineToDigital.h"
 #include <Servo.h>
 
-LineToDigital line(14,15,16, 100, 100, 100); // MUST be analog pins. Remember that on Uno, A0-A5 is 14-19.
+LineToDigital line(14,15,16, 90, 90, 90); // MUST be analog pins. Remember that on Uno, A0-A5 is 14-19.
 
 Servo leftWheel;
 #define pinLeftWheel 10
@@ -110,6 +110,9 @@ void loop() {
     case -3:
     leftWheel.write(0);
     break;
+    default:
+    leftWheelGear = 0;
+    break;
   }
   switch (rightWheelGear) {
     case 3:
@@ -132,6 +135,9 @@ void loop() {
     break;
     case -3:
     rightWheel.write(180);
+    break;
+    default:
+    rightWheelGear = 0;
     break;
   }
  
