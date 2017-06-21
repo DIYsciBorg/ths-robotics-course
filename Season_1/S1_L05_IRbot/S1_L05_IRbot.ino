@@ -55,7 +55,7 @@ void dump(decode_results *results) {
   }
   else if (results->decode_type == PANASONIC) {
     Serial.print("Decoded PANASONIC - Address: ");
-    Serial.print(results->address, HEX);
+    Serial.print(&results->address, HEX);
     Serial.print(" Value: ");
   }
   else if (results->decode_type == LG) {
