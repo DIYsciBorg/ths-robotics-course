@@ -1,6 +1,6 @@
 /***************************************
  * THS Robotics Course
- * Season 2, Lesson 2 : Bumpers as Tasks
+ * Season 2, Lesson 3 : Bumpers as Tasks
  * Emery Premeaux
  * 
  * This recreates the interrupts version of the bumper check code.

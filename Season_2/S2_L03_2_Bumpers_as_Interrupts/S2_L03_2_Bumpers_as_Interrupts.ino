@@ -1,6 +1,6 @@
 /***************************************
  * THS Robotics Course
- * Season 2, Lesson 2 : Bumpers using interrupts
+ * Season 2, Lesson 3 : Bumpers using interrupts
  * Emery Premeaux
  * 
  * Arduino UNO has 2 hardware interrupts, they are:
