@@ -25,8 +25,8 @@ void setup() {
   
   pinMode (interruptPinLeft, INPUT_PULLUP);
   pinMode (interruptPinRight, INPUT_PULLUP);
-  attachInterrupt(0, interruptBumperLeft, RISING);
-  attachInterrupt(1, interruptBumperRight, RISING);
+  attachInterrupt(0, interruptBumperLeft, FALLING);
+  attachInterrupt(1, interruptBumperRight, FALLING);
 }
 
 void interruptBumperLeft() {
@@ -51,4 +51,5 @@ void loop() {
     Serial.println("RIGHT BUMPER HIT!");
     bumperRightState = LOW;
   }
+  delay(500);
 }
