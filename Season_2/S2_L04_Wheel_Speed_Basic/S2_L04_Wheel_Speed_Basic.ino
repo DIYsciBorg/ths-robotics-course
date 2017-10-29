@@ -51,8 +51,8 @@ void setup() {
   speedCheck.enable();
   
   // put your setup code here, to run once:
-  pinMode (interruptPinLeft, INPUT);
-  pinMode (interruptPinRight, INPUT);
+  pinMode (interruptPinLeft, INPUT_PULLUP);
+  pinMode (interruptPinRight, INPUT_PULLUP);
   attachInterrupt(0, interruptWheelCounterLeft, RISING);
   attachInterrupt(1, interruptWheelCounterRight, RISING);
   pinMode(MotR1, OUTPUT);
