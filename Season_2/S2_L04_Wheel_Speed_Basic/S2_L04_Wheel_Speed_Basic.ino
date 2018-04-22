@@ -42,6 +42,7 @@ void speedCallback(){
   Serial.print("  :  ");
   Serial.print("R= ");
   Serial.println(rightSpeed);
+ // Serial.println();
 }
 
 void setup() {
@@ -67,6 +68,6 @@ void loop() {
   runner.execute();
   digitalWrite(MotR1, HIGH);
 
-//  digitalWrite(MotL1, HIGH);
+  digitalWrite(MotL1, HIGH);
  
 }
